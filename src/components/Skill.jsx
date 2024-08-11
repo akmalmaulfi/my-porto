@@ -14,7 +14,7 @@ const skill = () => {
         >
           Skills
         </h3>
-        <div className="text-neutral-200 text-center mb-5 flex justify-center items-center gap-2">
+        <div className="text-neutral-200 text-center mb-5  justify-center items-center gap-2 flex flex-wrap">
           <button
             data-aos="fade-up"
             data-aos-anchor-placement="bottom-bottom"
