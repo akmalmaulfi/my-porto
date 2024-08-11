@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(10 10 10);
+  background-image: radial-gradient(rgb(38 38 38) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#intro {
+  background: #7e22ce;
+  background: linear-gradient(81deg, #7e22ce 0%, rgba(68, 68, 68, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+#detail:hover {
+  box-shadow: 0px 0px 40px #6d28d9;
+}
+
+#skills {
+  background: white;
+  background: linear-gradient(80deg, #fff 0%, rgba(68, 68, 68, 1) 15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+}
+
+.test {
+  background-image: url("./assets/porto/vacation.png");
+  background-size: cover;
+}
+
+.test:nth-child(2) {
+  background-image: url("./assets/porto/urbg.png");
+}
+
+/* Bounce */
+
+.bounce {
+  display: inline-block;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    transition: none;
+  }
+  40% {
+    transform: translateY(-5px);
+    background-color: #6d28d9;
+    transition: none;
+    color: white;
+  }
+  60% {
+    transform: translateY(-5px);
+    background-color: #6d28d9;
+    color: white;
+    transition: none;
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  #skills {
+    background: white;
+    background: linear-gradient(80deg, #fff 0%, rgba(68, 68, 68, 1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    max-height: 256px !important;
+    background-color: red;
+    overflow: hidden;
+  }
+}
+
+.owl-stage {
+  padding: 50px 0 20px 0px !important;
+  display: flex !important;
+  margin: auto !important;
+}
+
+.owl-prev,
+.owl-next {
+  display: inline-block !important;
+  color: white !important;
+  font-size: 4rem !important;
+  margin: 0 2rem !important;
+  transition: 200ms;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: transparent !important;
+  color: #5b21b6 !important;
+}
+
+.owl-dots {
+  display: none !important;
+}
